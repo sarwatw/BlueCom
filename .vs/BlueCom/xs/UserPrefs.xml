@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{44A2D0CE-1F87-469A-8945-85818578727E}|Default">
+  <MonoDevelop.Ide.ItemProperties.BlueCom.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C220C1D0-E43B-420C-AF73-BF04071479D2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlueCom/MainPage.xaml">
+    <Files>
+      <File FileName="BlueCom/MainPage.xaml" Line="4" Column="12" />
+      <File FileName="BlueCom.iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlueCom.Android PreferredExecutionTarget="Android.SelectDevice" />
+  <MultiItemStartupConfigurations />
+</Properties>
