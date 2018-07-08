@@ -720,11 +720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sarwat/Projects/BlueCom/BlueCom.iOS/BlueCom.iOS.csproj",
+      "projectUniqueName": "/Users/Sarwat/BlueCom3/BlueCom.iOS/BlueCom.iOS.csproj",
       "projectName": "BlueCom.iOS",
-      "projectPath": "/Users/Sarwat/Projects/BlueCom/BlueCom.iOS/BlueCom.iOS.csproj",
+      "projectPath": "/Users/Sarwat/BlueCom3/BlueCom.iOS/BlueCom.iOS.csproj",
       "packagesPath": "/Users/Sarwat/.nuget/packages/",
-      "outputPath": "/Users/Sarwat/Projects/BlueCom/BlueCom.iOS/obj",
+      "outputPath": "/Users/Sarwat/BlueCom3/BlueCom.iOS/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Sarwat/.config/NuGet/NuGet.Config"
@@ -738,8 +738,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/Sarwat/Projects/BlueCom/BlueCom/BlueCom.csproj": {
-              "projectPath": "/Users/Sarwat/Projects/BlueCom/BlueCom/BlueCom.csproj"
+            "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj": {
+              "projectPath": "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj"
             }
           }
         }

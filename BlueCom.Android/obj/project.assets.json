@@ -763,11 +763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sarwat/Projects/BlueCom/BlueCom.Android/BlueCom.Android.csproj",
+      "projectUniqueName": "/Users/Sarwat/BlueCom3/BlueCom.Android/BlueCom.Android.csproj",
       "projectName": "BlueCom.Android",
-      "projectPath": "/Users/Sarwat/Projects/BlueCom/BlueCom.Android/BlueCom.Android.csproj",
+      "projectPath": "/Users/Sarwat/BlueCom3/BlueCom.Android/BlueCom.Android.csproj",
       "packagesPath": "/Users/Sarwat/.nuget/packages/",
-      "outputPath": "/Users/Sarwat/Projects/BlueCom/BlueCom.Android/obj",
+      "outputPath": "/Users/Sarwat/BlueCom3/BlueCom.Android/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Sarwat/.config/NuGet/NuGet.Config"
@@ -781,8 +781,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/Sarwat/Projects/BlueCom/BlueCom/BlueCom.csproj": {
-              "projectPath": "/Users/Sarwat/Projects/BlueCom/BlueCom/BlueCom.csproj"
+            "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj": {
+              "projectPath": "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj"
             }
           }
         }

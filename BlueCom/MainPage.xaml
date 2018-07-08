@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BlueCom" x:Class="BlueCom.MainPage">
     <StackLayout>
-        <Label Text="Commission Calcualtor" FontAttributes="Bold" Margin="0,30,0,20" FontSize="26" />
+        <Label Text="Realtor Commission Calcualtor" FontAttributes="Bold" Margin="0,30,0,20" FontSize="26" />
         <StackLayout Orientation="Horizontal">
             <Label Text="1. Price of Property" Margin = "10,0,0,0" FontAttributes="Bold">
             </Label>
