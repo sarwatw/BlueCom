@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.BlueCom.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C220C1D0-E43B-420C-AF73-BF04071479D2" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BlueCom/MainPage.xaml">
     <Files>
-      <File FileName="BlueCom/MainPage.xaml" Line="69" Column="15" />
-      <File FileName="BlueCom.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="BlueCom/MainPage.xaml" Line="52" Column="94" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
