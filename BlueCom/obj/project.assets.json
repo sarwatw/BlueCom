@@ -347,11 +347,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj",
+      "projectUniqueName": "/Users/Sarwat/BlueCom/BlueCom/BlueCom.csproj",
       "projectName": "BlueCom",
-      "projectPath": "/Users/Sarwat/BlueCom3/BlueCom/BlueCom.csproj",
+      "projectPath": "/Users/Sarwat/BlueCom/BlueCom/BlueCom.csproj",
       "packagesPath": "/Users/Sarwat/.nuget/packages/",
-      "outputPath": "/Users/Sarwat/BlueCom3/BlueCom/obj",
+      "outputPath": "/Users/Sarwat/BlueCom/BlueCom/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -16,3 +16,12 @@
 /Users/Sarwat/BlueCom3/BlueCom/obj/Debug/netstandard2.0/BlueCom.AssemblyInfo.cs
 /Users/Sarwat/BlueCom3/BlueCom/obj/Debug/netstandard2.0/BlueCom.dll
 /Users/Sarwat/BlueCom3/BlueCom/obj/Debug/netstandard2.0/BlueCom.pdb
+/Users/Sarwat/BlueCom/BlueCom/bin/Debug/netstandard2.0/BlueCom.deps.json
+/Users/Sarwat/BlueCom/BlueCom/bin/Debug/netstandard2.0/BlueCom.dll
+/Users/Sarwat/BlueCom/BlueCom/bin/Debug/netstandard2.0/BlueCom.pdb
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.csprojResolveAssemblyReference.cache
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.csproj.CoreCompileInputs.cache
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.AssemblyInfoInputs.cache
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.AssemblyInfo.cs
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.dll
+/Users/Sarwat/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.pdb
