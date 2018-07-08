@@ -49,9 +49,9 @@
                 <Entry Placeholder="Ex: 1,000" WidthRequest="100" />
                 <Label Text="Minus Deductions" VerticalTextAlignment="End" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
-                <Button Text="Calculate" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="30,0,0,0" HorizontalOptions="Start" />
-                <Button Text="Reset" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="30,0,0,0" HorizontalOptions="Start" />
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="Center">
+                <Button Text="Calculate" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="0,0,10,0" HorizontalOptions="Start" />
+                <Button Text="Reset" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="10,0,0,0" HorizontalOptions="Start" />
             </StackLayout>
         </StackLayout>
     </StackLayout>
