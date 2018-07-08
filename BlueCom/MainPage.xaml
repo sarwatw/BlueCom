@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BlueCom" x:Class="BlueCom.MainPage">
     <StackLayout>
-        <Label Text="Commission Calcualtor" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,30,0,20" FontSize="26" />
+        <Label Text="Commission Calculator" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,30,0,20" FontSize="26" />
         <StackLayout Orientation="Horizontal">
             <Label Text="1. Price of Property" Margin="20,0,0,0" FontAttributes="Bold">
             </Label>
@@ -12,56 +12,40 @@
             <Label Text="2.  Gross Commision" Margin="20,0,0,0" FontAttributes="Bold">
             </Label>
             <StackLayout Orientation="Horizontal">
-                <Label Text="% on first 100K +" Margin="40,0,0,0">
-                </Label>
-                <Entry Placeholder="Ex: 2%">
-                </Entry>
+                <Entry Placeholder="Ex: 2%" Margin="50,0,0,0" />
+                <Label Text="% on first 100K +" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="% on Balance +" Margin="40,0,0,0">
-                </Label>
-                <Entry Placeholder="Ex: 2%">
-                </Entry>
+                <Entry Placeholder="Ex: 2%" Margin="50,0,0,0" />
+                <Label Text="% on Balance +" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="40,0,0,0">
-                <Label Text="Additional Bonus">
-                </Label>
-                <Entry Placeholder="Ex: 5,000">
-                </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Ex: 5,000" Margin="50,0,0,0" />
+                <Label Text="Additional Bonus" VerticalTextAlignment="End" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="40,0,0,0">
-                <Label Text="Minus Deductions">
-                </Label>
-                <Entry Placeholder="Ex: 1,000">
-                </Entry>
+            <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
+                <Entry Placeholder="Ex: 1,000" />
+                <Label Text="Minus Deductions" />
             </StackLayout>
         </StackLayout>
         <StackLayout Orientation="Vertical">
-            <Label Text="3.  Buyer Commission" Margin="20,0,0,0" FontAttributes="Bold">
+            <Label Text="3. Buyer Commision" Margin="20,0,0,0" FontAttributes="Bold">
             </Label>
             <StackLayout Orientation="Horizontal">
-                <Label Text="% on first 100K +" Margin="40,0,0,0">
-                </Label>
-                <Entry Placeholder="Ex: 2%">
-                </Entry>
+                <Entry Placeholder="Ex: 2%" Margin="50,0,0,0" />
+                <Label Text="% on first 100K +" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="% on Balance +" Margin="40,0,0,0">
-                </Label>
-                <Entry Placeholder="Ex: 2%">
-                </Entry>
+                <Entry Placeholder="Ex: 2%" Margin="50,0,0,0" />
+                <Label Text="% on Balance +" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="40,0,0,0">
-                <Label Text="Additional Bonus">
-                </Label>
-                <Entry Placeholder="Ex: 5,000">
-                </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Ex: 5,000" Margin="50,0,0,0" />
+                <Label Text="Additional Bonus" VerticalTextAlignment="End" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="40,0,0,0">
-                <Label Text="Minus Deductions">
-                </Label>
-                <Entry Placeholder="Ex: 1,000">
-                </Entry>
+            <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
+                <Entry Placeholder="Ex: 1,000" />
+                <Label Text="Minus Deductions" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Button Text="Calculate" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="30,0,0,0" HorizontalOptions="Start" />
