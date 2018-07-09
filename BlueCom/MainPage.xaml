@@ -6,7 +6,7 @@
              <Label Text="1.  Value of Property Sold" Margin="20,0,0,10" FontAttributes="Bold">
             </Label>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="800,000" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="800,000" x:Name="propertyPrice" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="Property Price" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
         </StackLayout>
@@ -14,40 +14,40 @@
             <Label Text="2.  Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
             </Label>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" x:Name="percentOnFirst100K" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="Ex: 2%" x:Name="percentOnFirst100KGross" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="Ex: 2%" x:Name="percentOnBalanceGross" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 5,000" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="Ex: 5,000" x:Name="grossAdditionalBonus" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="Additional Bonus" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                <Entry Placeholder="Ex: 1,000" WidthRequest="100" />
-                <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                <Entry Placeholder="Ex: 1,000" x:Name="grossDeduction" WidthRequest="100" />
+                <Label Text="Minus Deductions"  VerticalTextAlignment="End" />
             </StackLayout>
         </StackLayout>
         <StackLayout Orientation="Vertical" Margin="0,20,0,0">
             <Label Text="3.  Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
             </Label>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="Ex: 2%" x:Name="percentOnFirst100KBuyer" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
+                <Entry Placeholder="Ex: 2%" x:Name="percentOnBalanceBuyer" WidthRequest="100" Margin="50,0,0,0" />
+                <Label Text="% on Balance"  Margin="0,0,0,0" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 5,000" WidthRequest="100" Margin="50,0,0,0" />
+                <Entry Placeholder="Ex: 5,000" x:Name="additionalBonusBuyer" WidthRequest="100" Margin="50,0,0,0" />
                 <Label Text="Additional Bonus" VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                <Entry Placeholder="Ex: 1,000" WidthRequest="100" />
-                <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                <Entry Placeholder="Ex: 1,000" x:Name="deductionBuyer" WidthRequest="100" />
+                <Label Text="Minus Deductions"  VerticalTextAlignment="End" />
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="Center">
                 <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="0,0,10,0" HorizontalOptions="Start" />
@@ -56,6 +56,8 @@
         </StackLayout>
         <StackLayout Orientation="Vertical">
             <Label x:Name="grossPaymentFinalValue" Text="Gross Commission: " IsVisible="false"/>
+            <Label x:Name="buyerPaymentFinalValue" Text="Buyer Commission: " IsVisible="false"/>
+            <Label x:Name="listingPaymentFinalValue" Text="Seller Commission: " IsVisible="false"/>
             
         </StackLayout>
     </StackLayout>
