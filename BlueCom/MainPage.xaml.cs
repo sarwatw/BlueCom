@@ -20,12 +20,11 @@ namespace BlueCom
             grossPaymentFinalValue.IsVisible = false;
             buyerPaymentFinalValue.IsVisible = false;
             listingPaymentFinalValue.IsVisible = false;
-
         }
 
         private void doCalculation()
         {
-            // calculate gross commission
+            // Calculate Gross Commission
             grossPaymentFinalValue.IsVisible = true;
 
 
@@ -49,15 +48,16 @@ namespace BlueCom
                                             tryParseGrossAdditionalBonus -
                                             tryParseGrossDeduction;
 
+            if (this.gstSwitch.IsToggled)
+            {
+                double valueToAdd = (grossPaymentCalculated * (0.05));
+                grossPaymentCalculated = grossPaymentCalculated + valueToAdd;
+            }
+
             grossPaymentFinalValue.Text = "Gross Commission: " + "$" + grossPaymentCalculated.ToString();
 
 
-
-
-
-
-
-            // calculate buyer commission
+            // Calculate Buyer Commission
             buyerPaymentFinalValue.IsVisible = true;
 
 
@@ -79,16 +79,20 @@ namespace BlueCom
                                             tryParseBuyerAdditionalBonus -
                                             tryParseBuyerDeduction;
 
+            if (this.gstSwitch.IsToggled)
+            {
+                double valueToAdd = (buyerPaymentCalculated * (0.05));
+                buyerPaymentCalculated = buyerPaymentCalculated + valueToAdd;
+
+            }
             buyerPaymentFinalValue.Text = "Buyer Commission: " + "$" + buyerPaymentCalculated.ToString();
-
-
+           
+            // Calculate Seller Commission
             listingPaymentFinalValue.IsVisible = true;
-            listingPaymentFinalValue.Text = "Seller Commission: " + "$" + (grossPaymentCalculated - buyerPaymentCalculated).ToString();
-
-            
+            double listingPaymentCalculated = grossPaymentCalculated - buyerPaymentCalculated;
+            listingPaymentFinalValue.Text = "Seller Commission: " + "$" + (listingPaymentCalculated).ToString();
         }
-        //  <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick
-        //You may have to change the Name depending on how you name that handler in xaml
+
 
         public void handleCalculateButtonClick(object sender, EventArgs args)
         {
@@ -96,57 +100,23 @@ namespace BlueCom
 
         }
 
+        public void handleResetButtonClick(object sender, EventArgs args)
+        {
+            propertyPrice.Text = null;
+            percentOnFirst100KGross.Text = null;
+            percentOnBalanceGross.Text = null;
+            grossAdditionalBonus.Text = null;
+            grossDeduction.Text = null;
+            percentOnFirst100KBuyer.Text = null;
+            percentOnBalanceBuyer.Text = null;
+            additionalBonusBuyer.Text = null;
+            deductionBuyer.Text = null;
+        }
 
+        void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+        {
+            doCalculation();
+        }
 
-
-        /* Listing commission  =  Seller Commission
-         * 
-         * 
-         *   <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-            <Label Text="3.  Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
-            </Label>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" x:Name="percentOnFirst100KBuyer" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="% on Balance" x:Name="percentOnBalanceBuyer" Margin="0,0,0,0" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 5,000" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="Additional Bonus" x:Name="grossAdditionalBonusBuyer" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                <Entry Placeholder="Ex: 1,000" WidthRequest="100" />
-                <Label Text="Minus Deductions" x:Name="grossDeductionBuyer" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="Center">
-                <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="0,0,10,0" HorizontalOptions="Start" />
-                <Button Text="Reset" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="10,0,0,0" HorizontalOptions="Start" />
-            </StackLayout>
-         */
-        /*
-         *       <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-            <Label Text="2.  Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
-            </Label>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" x:Name="percentOnFirst100KGross" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 2%" x:Name="percentOnBalanceGross" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Ex: 5,000" x:Name="grossAdditionalBonus" WidthRequest="100" Margin="50,0,0,0" />
-                <Label Text="Additional Bonus" VerticalTextAlignment="End" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                <Entry Placeholder="Ex: 1,000" WidthRequest="100" />
-                <Label Text="Minus Deductions" x:Name="grossDeduction" VerticalTextAlignment="End" />
-            </StackLayout>
-        </StackLayout>
-         */
     }
 }
