@@ -9,15 +9,21 @@ namespace BlueCom
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();
         }
 
-        //  <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick
-        //You may have to change the Name depending on how you name that handler in xaml
+        void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            grossPaymentFinalValue.IsVisible = false;
+            buyerPaymentFinalValue.IsVisible = false;
+            listingPaymentFinalValue.IsVisible = false;
 
-        public void handleCalculateButtonClick(object sender, EventArgs args)
+        }
+
+        private void doCalculation()
         {
             // calculate gross commission
             grossPaymentFinalValue.IsVisible = true;
@@ -38,12 +44,12 @@ namespace BlueCom
             double tryParseGrossDeduction = 0;
             double.TryParse(grossDeduction.Text, out tryParseGrossDeduction);
 
-            double grossPaymentCalculated = percentOnFirst100KGrossValue + 
+            double grossPaymentCalculated = percentOnFirst100KGrossValue +
                                             percentOnBalanceGrossValue +
-                                            tryParseGrossAdditionalBonus - 
+                                            tryParseGrossAdditionalBonus -
                                             tryParseGrossDeduction;
 
-            grossPaymentFinalValue.Text = grossPaymentFinalValue.Text + "$" + grossPaymentCalculated.ToString();
+            grossPaymentFinalValue.Text = "Gross Commission: " + "$" + grossPaymentCalculated.ToString();
 
 
 
@@ -73,11 +79,20 @@ namespace BlueCom
                                             tryParseBuyerAdditionalBonus -
                                             tryParseBuyerDeduction;
 
-            buyerPaymentFinalValue.Text = buyerPaymentFinalValue.Text + "$" + buyerPaymentCalculated.ToString();
+            buyerPaymentFinalValue.Text = "Buyer Commission: " + "$" + buyerPaymentCalculated.ToString();
 
 
             listingPaymentFinalValue.IsVisible = true;
-            listingPaymentFinalValue.Text = listingPaymentFinalValue.Text + "$" + (grossPaymentCalculated - buyerPaymentCalculated).ToString();
+            listingPaymentFinalValue.Text = "Seller Commission: " + "$" + (grossPaymentCalculated - buyerPaymentCalculated).ToString();
+
+            
+        }
+        //  <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick
+        //You may have to change the Name depending on how you name that handler in xaml
+
+        public void handleCalculateButtonClick(object sender, EventArgs args)
+        {
+            doCalculation();
 
         }
 

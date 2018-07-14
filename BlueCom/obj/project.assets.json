@@ -341,23 +341,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/Sarwat/.nuget/packages/": {},
+    "/Users/sarwatw/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sarwat/BlueCom/BlueCom/BlueCom.csproj",
+      "projectUniqueName": "/Users/sarwatw/BlueCom/BlueCom/BlueCom.csproj",
       "projectName": "BlueCom",
-      "projectPath": "/Users/Sarwat/BlueCom/BlueCom/BlueCom.csproj",
-      "packagesPath": "/Users/Sarwat/.nuget/packages/",
-      "outputPath": "/Users/Sarwat/BlueCom/BlueCom/obj",
+      "projectPath": "/Users/sarwatw/BlueCom/BlueCom/BlueCom.csproj",
+      "packagesPath": "/Users/sarwatw/.nuget/packages/",
+      "outputPath": "/Users/sarwatw/BlueCom/BlueCom/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Sarwat/.config/NuGet/NuGet.Config"
+        "/Users/sarwatw/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
