@@ -1,17 +1,22 @@
 ﻿<Properties StartupConfiguration="{44A2D0CE-1F87-469A-8945-85818578727E}|Default">
   <MonoDevelop.Ide.ItemProperties.BlueCom.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C696710E-725B-4492-B063-7DDD03D7FD00" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlueCom/MainPage.xaml.cs">
+  <MonoDevelop.Ide.ItemProperties.ReCalc.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C696710E-725B-4492-B063-7DDD03D7FD00" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlueCom.iOS/Info.plist">
     <Files>
       <File FileName="BlueCom/App.xaml" Line="5" Column="15" />
-      <File FileName="BlueCom/MainPage.xaml" Line="57" Column="50" />
-      <File FileName="BlueCom/MainPage.xaml.cs" Line="15" Column="35" />
+      <File FileName="BlueCom/MainPage.xaml" Line="73" Column="15" />
+      <File FileName="BlueCom/MainPage.xaml.cs" Line="118" Column="29" />
+      <File FileName="../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="644" Column="3" />
+      <File FileName="BlueCom.iOS/Properties/AssemblyInfo.cs" Line="19" Column="52" />
+      <File FileName="BlueCom.iOS/AppDelegate.cs" Line="26" Column="33" />
+      <File FileName="BlueCom.iOS/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BlueCom.Android PreferredExecutionTarget="Android.SelectDevice" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.BlueCom.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MultiItemStartupConfigurations />
 </Properties>
