@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace BlueCom
         public MainPage()
         {
             InitializeComponent();
+            var propertyPrice = new DoneEntry();
+            propertyPrice.Keyboard = Keyboard.Numeric; // optional, but this approach is especially useful for Numeric keyboard
         }
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
@@ -20,6 +23,22 @@ namespace BlueCom
             grossPaymentFinalValue.IsVisible = false;
             buyerPaymentFinalValue.IsVisible = false;
             listingPaymentFinalValue.IsVisible = false;
+
+
+        }
+
+        private long getPropertyPrice()
+        {
+            string propertyPriceWithoutCommas = propertyPrice.Text;
+            if (propertyPriceWithoutCommas != null)
+            {
+                propertyPriceWithoutCommas = propertyPriceWithoutCommas.Replace(",", "");
+            }
+
+            long tryParsePropertyPrice;
+            long.TryParse(propertyPriceWithoutCommas, out tryParsePropertyPrice);
+
+            return tryParsePropertyPrice;
         }
 
         private void doCalculation()
@@ -32,8 +51,7 @@ namespace BlueCom
             double.TryParse(percentOnFirst100KGross.Text, out tryParsePercentOnFirst100KGross);
             double percentOnFirst100KGrossValue = (100000 * (tryParsePercentOnFirst100KGross / 100));
 
-            double tryParsePropertyPrice;
-            double.TryParse(propertyPrice.Text, out tryParsePropertyPrice);
+            long tryParsePropertyPrice = getPropertyPrice();
             double tryParsePercentOnBalanceGrossValue;
             double.TryParse(percentOnBalanceGross.Text, out tryParsePercentOnBalanceGrossValue);
             double percentOnBalanceGrossValue = (tryParsePropertyPrice - 100000) * (tryParsePercentOnBalanceGrossValue / 100);
@@ -86,7 +104,7 @@ namespace BlueCom
 
             }
             buyerPaymentFinalValue.Text = "Buyer Commission: " + "$" + buyerPaymentCalculated.ToString();
-           
+
             // Calculate Seller Commission
             listingPaymentFinalValue.IsVisible = true;
             double listingPaymentCalculated = grossPaymentCalculated - buyerPaymentCalculated;
@@ -116,7 +134,25 @@ namespace BlueCom
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
             doCalculation();
+            if (propertyPrice.Text == null || propertyPrice.Text.Length == 0)
+            {
+                grossPaymentFinalValue.IsVisible = false;
+                buyerPaymentFinalValue.IsVisible = false;
+                listingPaymentFinalValue.IsVisible = false;
+            }
         }
+
+        void Entry_Completed(object sender, EventArgs e)
+        {
+            long tryParsePropertyPrice;
+            long.TryParse(propertyPrice.Text, out tryParsePropertyPrice);
+            propertyPrice.Text = tryParsePropertyPrice.ToString("N0");
+           
+        }
+
+
+
+
 
     }
 }

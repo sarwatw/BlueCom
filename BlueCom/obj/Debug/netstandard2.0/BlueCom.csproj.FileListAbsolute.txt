@@ -33,3 +33,4 @@
 /Users/sarwatw/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.AssemblyInfo.cs
 /Users/sarwatw/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.dll
 /Users/sarwatw/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.pdb
+/Users/sarwatw/BlueCom/BlueCom/obj/Debug/netstandard2.0/BlueCom.csprojResolveAssemblyReference.cache

@@ -17,31 +17,31 @@ namespace BlueCom {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry propertyPrice;
+        private global::BlueCom.DoneEntry propertyPrice;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry percentOnFirst100KGross;
+        private global::BlueCom.DoneEntry percentOnFirst100KGross;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry percentOnBalanceGross;
+        private global::BlueCom.DoneEntry percentOnBalanceGross;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry grossAdditionalBonus;
+        private global::BlueCom.DoneEntry grossAdditionalBonus;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry grossDeduction;
+        private global::BlueCom.DoneEntry grossDeduction;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry percentOnFirst100KBuyer;
+        private global::BlueCom.DoneEntry percentOnFirst100KBuyer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry percentOnBalanceBuyer;
+        private global::BlueCom.DoneEntry percentOnBalanceBuyer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry additionalBonusBuyer;
+        private global::BlueCom.DoneEntry additionalBonusBuyer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry deductionBuyer;
+        private global::BlueCom.DoneEntry deductionBuyer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Switch gstSwitch;
@@ -61,15 +61,15 @@ namespace BlueCom {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            propertyPrice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "propertyPrice");
-            percentOnFirst100KGross = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "percentOnFirst100KGross");
-            percentOnBalanceGross = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "percentOnBalanceGross");
-            grossAdditionalBonus = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "grossAdditionalBonus");
-            grossDeduction = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "grossDeduction");
-            percentOnFirst100KBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "percentOnFirst100KBuyer");
-            percentOnBalanceBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "percentOnBalanceBuyer");
-            additionalBonusBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "additionalBonusBuyer");
-            deductionBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "deductionBuyer");
+            propertyPrice = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "propertyPrice");
+            percentOnFirst100KGross = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "percentOnFirst100KGross");
+            percentOnBalanceGross = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "percentOnBalanceGross");
+            grossAdditionalBonus = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "grossAdditionalBonus");
+            grossDeduction = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "grossDeduction");
+            percentOnFirst100KBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "percentOnFirst100KBuyer");
+            percentOnBalanceBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "percentOnBalanceBuyer");
+            additionalBonusBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "additionalBonusBuyer");
+            deductionBuyer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::BlueCom.DoneEntry>(this, "deductionBuyer");
             gstSwitch = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Switch>(this, "gstSwitch");
             calculateButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "calculateButton");
             grossPaymentFinalValue = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "grossPaymentFinalValue");
