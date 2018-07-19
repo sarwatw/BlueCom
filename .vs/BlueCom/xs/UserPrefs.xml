@@ -4,8 +4,8 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="BlueCom/App.xaml" Line="5" Column="15" />
-      <File FileName="BlueCom/MainPage.xaml" Line="10" Column="84" />
-      <File FileName="BlueCom/MainPage.xaml.cs" Line="152" Column="38" />
+      <File FileName="BlueCom/MainPage.xaml" Line="50" Column="37" />
+      <File FileName="BlueCom/MainPage.xaml.cs" Line="149" Column="71" />
       <File FileName="../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="644" Column="3" />
       <File FileName="BlueCom.iOS/Properties/AssemblyInfo.cs" Line="19" Column="52" />
       <File FileName="BlueCom.iOS/AppDelegate.cs" Line="26" Column="33" />
@@ -16,7 +16,7 @@
       <File FileName="BlueCom.iOS/EmptyClass.cs" Line="28" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

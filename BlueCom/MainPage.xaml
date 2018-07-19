@@ -1,73 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage BackgroundColor="#F0FFFF" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BlueCom"  x:Class="BlueCom.MainPage" >
-    <ScrollView>
-        <StackLayout Margin="0,40,0,0" HorizontalOptions="Center">
-            <Label Text="Commission Calculator" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,30,0,20" FontSize="26" />
-            <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                <Label Text="1.  Value of Property Sold" Margin="20,0,0,10" FontAttributes="Bold">
-                </Label>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry Completed="Entry_Completed" Keyboard="Numeric"  TextChanged="Handle_TextChanged" x:Name="propertyPrice" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="Property Price" Margin="0,0,0,0" VerticalTextAlignment="End" />
-                </StackLayout>
-            </StackLayout>
-            <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                <Label Text="2.  Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
-                </Label>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="percentOnFirst100KGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="percentOnBalanceGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="grossAdditionalBonus" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="Additional Bonus" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                    <local:DoneEntry x:Name="grossDeduction" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" />
-                    <Label Text="Minus Deductions" VerticalTextAlignment="End" />
-                </StackLayout>
-            </StackLayout>
-            <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                <Label Text="3.  Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
-                </Label>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="percentOnFirst100KBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="percentOnBalanceBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <local:DoneEntry x:Name="additionalBonusBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" Margin="50,0,0,0" />
-                    <Label Text="Additional Bonus" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" Margin="50,0,0,0">
-                    <local:DoneEntry x:Name="deductionBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="100" />
-                    <Label Text="Minus Deductions" VerticalTextAlignment="End" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
-                    <Label Text="4. Add GST" Margin="20,0,0,10" FontAttributes="Bold">
+<ContentPage BackgroundColor="#F0FFFF" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BlueCom" x:Class="BlueCom.MainPage">
+    <StackLayout>
+        <Label Text="Commission Calculator" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,70,0,20" FontSize="26" />
+        <ScrollView>
+            <StackLayout Margin="0,0,0,0" HorizontalOptions="Center">
+                <StackLayout Orientation="Vertical" Margin="0,20,0,0">
+                    <Label Text="1.  Purchase Price" Margin="10,0,0,10" FontAttributes="Bold">
                     </Label>
                     <StackLayout Orientation="Horizontal">
-                        <Switch x:Name="gstSwitch" IsToggled="false" Toggled="Handle_Toggled">
-                        </Switch>
+                        <local:DoneEntry Completed="Entry_Completed" Keyboard="Numeric" TextChanged="Handle_TextChanged" x:Name="propertyPrice" WidthRequest="220" Margin="30,0,10,0" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="Center">
-                    <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="0,0,10,0" HorizontalOptions="Start" />
-                    <Button Text="Reset" WidthRequest="100" Clicked="handleResetButtonClick" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="10,0,0,0" HorizontalOptions="Start" />
+                <StackLayout Orientation="Vertical" Margin="0,20,0,0">
+                    <Label Text="2.  Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="percentOnFirst100KGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="percentOnBalanceGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="grossAdditionalBonus" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="Additional Bonus" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="grossDeduction" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="0,20,0,0">
+                    <Label Text="3.  Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
+                    </Label>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="percentOnFirst100KBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="percentOnBalanceBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="additionalBonusBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="Additional Bonus" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <local:DoneEntry x:Name="deductionBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                        <Label Text="4. GST" Margin="20,0,0,10" FontAttributes="Bold">
+                        </Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Switch x:Name="gstSwitch" IsToggled="false" Toggled="Handle_Toggled">
+                            </Switch>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="Center">
+                        <Button Text="Calculate" x:Name="calculateButton" Clicked="handleCalculateButtonClick" WidthRequest="100" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="0,0,10,0" HorizontalOptions="Start" />
+                        <Button Text="Reset" WidthRequest="100" Clicked="handleResetButtonClick" BackgroundColor="Silver" BorderRadius="10" BorderWidth="1" BorderColor="Black" Margin="10,0,0,0" HorizontalOptions="Start" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+                    <Label x:Name="grossPaymentFinalValue" Text="Gross Commission " IsVisible="false" />
+                    <Label x:Name="buyerPaymentFinalValue" Text="Buyer Commission " IsVisible="false" />
+                    <Label x:Name="listingPaymentFinalValue" Text="Listing Commission " IsVisible="false" />
                 </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Margin="0,20,0,0">
-                <Label x:Name="grossPaymentFinalValue" Text="Gross Commission: " IsVisible="false" />
-                <Label x:Name="buyerPaymentFinalValue" Text="Buyer Commission: " IsVisible="false" />
-                <Label x:Name="listingPaymentFinalValue" Text="Seller Commission: " IsVisible="false" />
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

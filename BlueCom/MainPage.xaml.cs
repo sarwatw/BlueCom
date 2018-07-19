@@ -72,7 +72,7 @@ namespace BlueCom
                 grossPaymentCalculated = grossPaymentCalculated + valueToAdd;
             }
 
-            grossPaymentFinalValue.Text = "Gross Commission: " + "$" + grossPaymentCalculated.ToString();
+            grossPaymentFinalValue.Text = "Gross Commission " + "$" + grossPaymentCalculated.ToString("N0");;
 
 
             // Calculate Buyer Commission
@@ -103,12 +103,12 @@ namespace BlueCom
                 buyerPaymentCalculated = buyerPaymentCalculated + valueToAdd;
 
             }
-            buyerPaymentFinalValue.Text = "Buyer Commission: " + "$" + buyerPaymentCalculated.ToString();
+            buyerPaymentFinalValue.Text = "Buyer Commission " + "$" + buyerPaymentCalculated.ToString("N0");
 
             // Calculate Seller Commission
             listingPaymentFinalValue.IsVisible = true;
             double listingPaymentCalculated = grossPaymentCalculated - buyerPaymentCalculated;
-            listingPaymentFinalValue.Text = "Seller Commission: " + "$" + (listingPaymentCalculated).ToString();
+            listingPaymentFinalValue.Text = "Listing Commission " + "$" + (listingPaymentCalculated).ToString("N0");
         }
 
 
@@ -144,8 +144,8 @@ namespace BlueCom
 
         void Entry_Completed(object sender, EventArgs e)
         {
-            long tryParsePropertyPrice;
-            long.TryParse(propertyPrice.Text, out tryParsePropertyPrice);
+            long tryParsePropertyPrice = getPropertyPrice();
+           // long.TryParse(propertyPrice.Text, out tryParsePropertyPrice);
             propertyPrice.Text = tryParsePropertyPrice.ToString("N0");
            
         }
