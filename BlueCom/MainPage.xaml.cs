@@ -115,7 +115,6 @@ namespace BlueCom
         public void handleCalculateButtonClick(object sender, EventArgs args)
         {
             doCalculation();
-
         }
 
         public void handleResetButtonClick(object sender, EventArgs args)
@@ -144,9 +143,11 @@ namespace BlueCom
 
         void Entry_Completed(object sender, EventArgs e)
         {
-            long tryParsePropertyPrice = getPropertyPrice();
-           // long.TryParse(propertyPrice.Text, out tryParsePropertyPrice);
-            propertyPrice.Text = tryParsePropertyPrice.ToString("N0");
+            if (propertyPrice.Text != null && propertyPrice.Text !=string.Empty)
+            {
+                long tryParsePropertyPrice = getPropertyPrice();
+                propertyPrice.Text = tryParsePropertyPrice.ToString("N0");
+            }
            
         }
 
