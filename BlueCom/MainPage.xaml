@@ -4,54 +4,54 @@
         <Label Text="Commission Calculator" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,70,0,20" FontSize="26" />
         <ScrollView>
             <StackLayout Margin="0,0,0,0" HorizontalOptions="Center">
-                <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                    <Label Text="1.  Purchase Price" Margin="10,0,0,10" FontAttributes="Bold">
+                <StackLayout Orientation="Vertical" Margin="0,10,0,0">
+                    <Label Text="Purchase Price" Margin="20,0,0,10" FontAttributes="Bold">
                     </Label>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry Completed="Entry_Completed" Keyboard="Numeric" TextChanged="Handle_TextChanged" x:Name="propertyPrice" WidthRequest="220" Margin="30,0,10,0" />
+                        <local:DoneEntry Completed="Entry_Completed" Keyboard="Numeric" TextChanged="Handle_TextChanged" x:Name="propertyPrice" WidthRequest="220" Margin="20,0,10,0" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                    <Label Text="2.  Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
+                    <Label Text="Gross Commission" Margin="20,0,0,10" FontAttributes="Bold">
                     </Label>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="percentOnFirst100KGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="percentOnFirst100KGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="percentOnBalanceGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="percentOnBalanceGross" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="grossAdditionalBonus" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="grossAdditionalBonus" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="Additional Bonus" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="grossDeduction" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="grossDeduction" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="Minus Deductions" VerticalTextAlignment="End" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Margin="0,20,0,0">
-                    <Label Text="3.  Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
+                    <Label Text="Buyer Commission" Margin="20,0,0,10" FontAttributes="Bold">
                     </Label>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="percentOnFirst100KBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="percentOnFirst100KBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="% on 1st 100K" Margin="0,0,0,0" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="percentOnBalanceBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="percentOnBalanceBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="% on Balance" Margin="0,0,0,0" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="additionalBonusBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="additionalBonusBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="Additional Bonus" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <local:DoneEntry x:Name="deductionBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="30,0,10,0" />
+                        <local:DoneEntry x:Name="deductionBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
                         <Label Text="Minus Deductions" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
-                        <Label Text="4. GST" Margin="20,0,0,10" FontAttributes="Bold">
+                        <Label Text="GST" Margin="20,0,0,10" FontAttributes="Bold">
                         </Label>
                         <StackLayout Orientation="Horizontal">
                             <Switch x:Name="gstSwitch" IsToggled="false" Toggled="Handle_Toggled">
