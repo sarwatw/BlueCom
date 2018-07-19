@@ -24,11 +24,11 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <local:DoneEntry x:Name="grossAdditionalBonus" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
-                        <Label Text="Additional Bonus" VerticalTextAlignment="End" />
+                        <Label Text="Bonus" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <local:DoneEntry x:Name="grossDeduction" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
-                        <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                        <Label Text="Deductions" VerticalTextAlignment="End" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Margin="0,20,0,0">
@@ -44,11 +44,11 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <local:DoneEntry x:Name="additionalBonusBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
-                        <Label Text="Additional Bonus" VerticalTextAlignment="End" />
+                        <Label Text="Bonus" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <local:DoneEntry x:Name="deductionBuyer" TextChanged="Handle_TextChanged" Keyboard="Numeric" WidthRequest="75" Margin="20,0,10,0" />
-                        <Label Text="Minus Deductions" VerticalTextAlignment="End" />
+                        <Label Text="Deductions" VerticalTextAlignment="End" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
                         <Label Text="GST" Margin="20,0,0,10" FontAttributes="Bold">
