@@ -30,9 +30,9 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>RE/CALC</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleVersion</key>
 	<string>1.2</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
